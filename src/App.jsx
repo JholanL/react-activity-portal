@@ -3,12 +3,15 @@ import Dashboard from "./pages/Dashboard"
 import Activity1 from "./pages/Activity1"
 import Activity2 from "./pages/Activity2"
 import Activity3 from "./pages/Activity3"
+import Navbar from "./components/Navbar"
 
 function App() {
   const [currentPage, setCurrentPage] = useState("dashboard")
 
   return (
     <>
+      <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
+
       {currentPage === "dashboard" && (
         <Dashboard setCurrentPage={setCurrentPage} />
       )}
