@@ -43,10 +43,10 @@ function Dashboard({ setCurrentPage }) {
         <article className="activity-card">
           <span className="activity-number">03</span>
 
-          <h2>Activity 3</h2>
+          <h2>Password Strength Checker</h2>
 
           <p>
-            Activity 3 description will be placed here.
+            Check a password’s strength based on its length, with validation and a strength status message displayed on submission.
           </p>
 
           <button onClick={() => setCurrentPage("activity3")}>
