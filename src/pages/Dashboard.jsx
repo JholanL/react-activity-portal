@@ -39,6 +39,12 @@ function Dashboard({ setCurrentPage }) {
 
         <article className="activity-card construction-card">
           <span className="activity-number">03</span>
+
+          <h2>Password Strength Checker</h2>
+
+          <p> 
+            Check a password’s strength based on its length, with validation and a strength status message displayed on submission.
+          </p>
           <span className="card-badge">In Development</span>
           <h2>Placeholder</h2>
           <p>
