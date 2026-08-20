@@ -1119,3 +1119,7 @@ button {
     width: 100%;
   }
 }
+  .form-actions,
+  .result-panel dl {
+    grid-template-columns: 1fr;
+  }

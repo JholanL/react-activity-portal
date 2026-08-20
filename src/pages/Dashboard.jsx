@@ -39,24 +39,19 @@ function Dashboard({ setCurrentPage }) {
 
         <article className="activity-card construction-card">
           <span className="activity-number">03</span>
-
           <h2>Password Strength Checker</h2>
 
           <p>
             Check a password’s strength based on its length, with validation and a strength status message displayed on submission.
-          <span className="card-badge">In Development</span>
-          <h2>Placeholder</h2>
-          <p>
-            Reserved for your groupmate. This page is ready for their assigned
-            activity once they add the final content.
           </p>
+
           <button onClick={() => setCurrentPage("activity3")}>
-            View Placeholder
+            View Password
           </button>
         </article>
       </section>
     </main>
-  )
+  );
 }
 
-export default Dashboard
+export default Dashboard;
