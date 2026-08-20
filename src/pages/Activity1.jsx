@@ -126,7 +126,7 @@ function Activity1({ setCurrentPage }) {
 
             <div className="form-actions">
               <button type="submit">Check Attendance</button>
-              <button className="secondary-button" type="button" onClick={resetForm}>
+              <button className="clear-button" type="button" onClick={resetForm}>
                 Reset
               </button>
             </div>

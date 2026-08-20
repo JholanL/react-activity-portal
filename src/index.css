@@ -706,7 +706,7 @@ button {
   padding: 12px 22px;
   border: none;
   border-radius: 10px;
-  background: #111827;
+  background: #096b4c;
   color: white;
   font-weight: 600;
   cursor: pointer;
@@ -715,7 +715,7 @@ button {
 
 .form-actions button[type="submit"]:hover,
 .form-actions button[type="button"]:not(.secondary-button):hover {
-  background: #374151;
+  background: #096b4c;
 }
 
 .secondary-button {
