@@ -124,9 +124,9 @@ function Activity1({ setCurrentPage }) {
               )}
             </label>
 
-            <div className="password-buttons">
+            <div className="form-actions">
               <button type="submit">Check Attendance</button>
-              <button className="clear-button" type="button" onClick={resetForm}>
+              <button className="form-actions" type="button" onClick={resetForm}>
                 Reset
               </button>
             </div>
