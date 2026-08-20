@@ -25,16 +25,15 @@ function Dashboard({ setCurrentPage }) {
           </button>
         </article>
 
-        <article className="activity-card construction-card">
+        <article className="activity-card feature-card">
           <span className="activity-number">02</span>
-          <span className="card-badge">In Development</span>
-          <h2>Placeholder</h2>
+          <h2>Login Authentication</h2>
           <p>
-            Reserved for your groupmate. This page is ready for their assigned
-            activity once they add the final content.
+            Sign in with a username and password, with validation and a
+            welcome + logout view on success.
           </p>
           <button onClick={() => setCurrentPage("activity2")}>
-            View Placeholder
+            Open Login
           </button>
         </article>
 
