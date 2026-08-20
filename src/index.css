@@ -318,7 +318,8 @@ button {
 }
 
 .activity-card button,
-.activity-form button {
+.activity-form button,
+.result-panel .form-actions button {
   min-height: 46px;
   padding: 0 18px;
   border: none;
@@ -330,7 +331,8 @@ button {
 }
 
 .activity-card button:hover,
-.activity-form button:hover {
+.activity-form button:hover,
+.result-panel .form-actions button:hover {
   background: #08482f;
   box-shadow: 0 12px 24px rgba(13, 95, 63, 0.18);
   transform: translateY(-1px);
