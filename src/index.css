@@ -239,7 +239,6 @@ button {
 .instruction-list span {
   padding: 8px 10px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.14);
   color: white;
   font-size: 13px;
   font-weight: 700;
@@ -643,7 +642,7 @@ button {
   position: relative;
   padding-left: 18px;
   font-size: 14px;
-  color: #6b7280;
+  color: white;
 }
 
 .instruction-list span::before {
