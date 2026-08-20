@@ -42,9 +42,8 @@ function Dashboard({ setCurrentPage }) {
 
           <h2>Password Strength Checker</h2>
 
-          <p> 
+          <p>
             Check a password’s strength based on its length, with validation and a strength status message displayed on submission.
-          </p>
           <span className="card-badge">In Development</span>
           <h2>Placeholder</h2>
           <p>
