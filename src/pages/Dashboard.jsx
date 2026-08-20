@@ -32,7 +32,7 @@ function Dashboard({ setCurrentPage }) {
           <h2>Activity 2</h2>
 
           <p>
-            Activity 2 description will be placed here.
+            Login Authentication — sign in with a username and password.
           </p>
 
           <button onClick={() => setCurrentPage("activity2")}>
