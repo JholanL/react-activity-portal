@@ -41,9 +41,7 @@ function Activity3({ setCurrentPage }) {
           <span className="activity-page-number">Activity 03</span>
 
           <h1>
-            Password Strength
-            <br />
-            Checker
+            Password Strength Checker
           </h1>
 
           <p>
