@@ -126,7 +126,7 @@ function Activity1({ setCurrentPage }) {
 
             <div className="password-buttons">
               <button type="submit">Check Attendance</button>
-              <button className="check-button" type="button" onClick={resetForm}>
+              <button className="clear-button" type="button" onClick={resetForm}>
                 Reset
               </button>
             </div>
