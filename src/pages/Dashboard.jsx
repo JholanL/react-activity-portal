@@ -37,7 +37,7 @@ function Dashboard({ setCurrentPage }) {
           </button>
         </article>
 
-        <article className="activity-card construction-card">
+        <article className="activity-card feature-card">
           <span className="activity-number">03</span>
           <h2>Password Strength Checker</h2>
 
