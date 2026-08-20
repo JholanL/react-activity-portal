@@ -36,11 +36,9 @@ function Activity3({ setCurrentPage }) {
         Back to Dashboard
       </button>
 
-      <div className="password-layout">
-        <div className="password-intro">
-          <div className="password-number">
-            ACTIVITY 03
-          </div>
+      <div className="activity-content attendance-layout page-enter">
+        <div className="activity-intro">
+          <span className="activity-page-number">Activity 03</span>
 
           <h1>
             Password Strength
@@ -52,10 +50,10 @@ function Activity3({ setCurrentPage }) {
             Classify a password by length as Weak, Medium, or Strong.
           </p>
 
-          <div className="password-notes">
-            <div>Check the password length.</div>
-            <div>Get a Weak, Medium, or Strong result.</div>
-            <div>View the strength message after checking.</div>
+          <div className="instruction-list">
+            <span>Check the password length.</span>
+            <span>Get a Weak, Medium, or Strong result.</span>
+            <span>View the strength message after checking.</span>
           </div>
         </div>
 
