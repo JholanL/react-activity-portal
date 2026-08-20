@@ -1,22 +1,29 @@
 function Activity3({ setCurrentPage }) {
   return (
-    <main className="activity-page">
+    <main className="activity-page shell">
       <button
         className="back-button"
         onClick={() => setCurrentPage("dashboard")}
       >
-        ← Back to Dashboard
+        Back to Dashboard
       </button>
 
-      <div className="activity-content">
-        <span className="activity-page-number">Activity 03</span>
+      <section className="activity-content placeholder-page page-enter">
+        <div className="activity-intro placeholder-intro">
+          <span className="activity-page-number">Activity 03</span>
+          <h1>Placeholder</h1>
+          <p>
+            This activity page is reserved for your groupmate. The final
+            content can be added here once their assigned activity is ready.
+          </p>
 
-        <h1>Activity 3</h1>
-
-        <p>
-          Activity 3 content will be placed here.
-        </p>
-      </div>
+          <div className="rule-list">
+            <span>In Development</span>
+            <span>Groupmate Area</span>
+            <span>Same Portal Style</span>
+          </div>
+        </div>
+      </section>
     </main>
   )
 }
