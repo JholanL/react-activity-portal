@@ -87,72 +87,74 @@ function Activity1({ setCurrentPage }) {
           </div>
         </div>
 
-        <form className="activity-form" onSubmit={checkAttendance}>
-          <label>
-            Employee Name
-            <input
-              type="text"
-              value={employeeName}
-              onChange={(event) => {
-                setEmployeeName(event.target.value)
-                setFieldErrors({ ...fieldErrors, employeeName: "" })
-              }}
-              placeholder="e.g. Ana Santos"
-              className={fieldErrors.employeeName ? "input-error" : ""}
-            />
-            {fieldErrors.employeeName && (
-              <span className="field-error">{fieldErrors.employeeName}</span>
-            )}
-          </label>
+        <div>
+          <form className="activity-form" onSubmit={checkAttendance}>
+            <label>
+              Employee Name
+              <input
+                type="text"
+                value={employeeName}
+                onChange={(event) => {
+                  setEmployeeName(event.target.value)
+                  setFieldErrors({ ...fieldErrors, employeeName: "" })
+                }}
+                placeholder="e.g. Ana Santos"
+                className={fieldErrors.employeeName ? "input-error" : ""}
+              />
+              {fieldErrors.employeeName && (
+                <span className="field-error">{fieldErrors.employeeName}</span>
+              )}
+            </label>
 
-          <label>
-            Time In
-            <input
-              type="number"
-              step="0.01"
-              value={timeIn}
-              onChange={(event) => {
-                setTimeIn(event.target.value)
-                setFieldErrors({ ...fieldErrors, timeIn: "" })
-              }}
-              placeholder="e.g. 8.5"
-              className={fieldErrors.timeIn ? "input-error" : ""}
-            />
-            {fieldErrors.timeIn && (
-              <span className="field-error">{fieldErrors.timeIn}</span>
-            )}
-          </label>
+            <label>
+              Time In
+              <input
+                type="number"
+                step="0.01"
+                value={timeIn}
+                onChange={(event) => {
+                  setTimeIn(event.target.value)
+                  setFieldErrors({ ...fieldErrors, timeIn: "" })
+                }}
+                placeholder="e.g. 8.5"
+                className={fieldErrors.timeIn ? "input-error" : ""}
+              />
+              {fieldErrors.timeIn && (
+                <span className="field-error">{fieldErrors.timeIn}</span>
+              )}
+            </label>
 
-          <div className="form-actions">
-            <button type="submit">Check Attendance</button>
-            <button className="secondary-button" type="button" onClick={resetForm}>
-              Reset
-            </button>
-          </div>
-        </form>
+            <div className="form-actions">
+              <button type="submit">Check Attendance</button>
+              <button className="secondary-button" type="button" onClick={resetForm}>
+                Reset
+              </button>
+            </div>
+          </form>
 
-        {result && (
-          <aside className={`result-panel ${result.tone}`}>
-            <span className="result-label">Attendance Result</span>
-            <h2>{result.status}</h2>
-            <p>{result.message}</p>
+          {result && (
+            <aside className={`result-panel ${result.tone}`}>
+              <span className="result-label">Attendance Result</span>
+              <h2>{result.status}</h2>
+              <p>{result.message}</p>
 
-            <dl>
-              <div>
-                <dt>Employee</dt>
-                <dd>{result.name}</dd>
-              </div>
-              <div>
-                <dt>Time In</dt>
-                <dd>{result.time}</dd>
-              </div>
-              <div>
-                <dt>Status</dt>
-                <dd>{result.status}</dd>
-              </div>
-            </dl>
-          </aside>
-        )}
+              <dl>
+                <div>
+                  <dt>Employee</dt>
+                  <dd>{result.name}</dd>
+                </div>
+                <div>
+                  <dt>Time In</dt>
+                  <dd>{result.time}</dd>
+                </div>
+                <div>
+                  <dt>Status</dt>
+                  <dd>{result.status}</dd>
+                </div>
+              </dl>
+            </aside>
+          )}
+        </div>
       </section>
     </main>
   )
